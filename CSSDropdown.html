@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dropdown</title>
+    <style>
+        /* .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: aquamarine;
+            min-width: 150px;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        } */
+
+
+        /*-----------------------*/
+        .dropbtn{
+            background-color: yellowgreen;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .dropbtn:hover{
+            background-color: green;
+            color: white;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: aqua;
+            min-width: 100px;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        ul{
+            list-style-type: none;
+           margin: 0;
+           padding: 0;
+        }
+        .dropdown ul{
+            padding-left: 0;
+        }
+
+        .dropdown-content li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .dropdown-content li a:hover{
+            background-color: wheat;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown1{
+            position: relative;
+            display: block;
+        }
+        .dropdown-content1{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: violet;
+            min-width: 100px;
+            top: 0;
+            left: 100px;
+        }
+        .dropdown1:hover .dropdown-content1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Dropdown</h1>
+
+    <!-- <div class="dropdown">
+        <span>Dropdown Here</span>
+        <div class="dropdown-content">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div> -->
+
+    <h1>Button  dropdown</h1>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <ul class="dropdown-content">
+            <li><a href="">Menu 1</a></li>
+            <li><a href="">Menu 2</a></li>
+            <li class="dropdown1">
+                <a href="">Menu 3</a>
+                <div class="dropdown-content1">
+                    <a href="">Sub menu 1</a>
+                    <a href="">Sub menu 2</a>
+                    <a href="">Sub menu 3</a>
+                </div>
+            </li>
+            <li><a href="">Menu 4</a></li>
+            <li><a href="">Menu 5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

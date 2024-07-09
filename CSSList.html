@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <style>
+        ul{
+            list-style-type: circle;
+            /* list-style-image: url(assets/images/right-arrow.png);
+            list-style-position: inside; */
+            background-color: aqua;
+            padding: 25px;
+
+        }
+
+        ul li{
+            background-color: wheat;
+            margin-left: 20px;
+        }
+
+        ol{
+            background-color: violet;
+            padding: 20px;
+        }
+        ol li{
+            background-color: lightsalmon;
+            margin: 10px;
+        }
+
+        /* ul li{
+            border: solid;
+        } */
+
+        ol .one{
+            list-style-image: url(assets/images/right-arrow.png);
+        }
+        
+        ol .two{
+            list-style-image: url(assets/images/arrow1.png);
+        }
+
+
+    </style>
+</head>
+<body style="margin-bottom: 300px;">
+    <h1>CSS List</h1>
+    <h3>Ordered List</h3>
+ 
+    <ol >
+        <li class="one">First</li>
+        <li class="two">Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+</body>
+</html>

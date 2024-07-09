@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+
+        .parent {
+            border: solid;
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .child {
+            width: 100px;
+            border: solid red;
+            position: absolute;
+            top: 100px;
+            right: 0;
+        }
+
+        header{
+            background-color: aqua;
+            padding: 30px;
+        }
+        nav{
+            background-color: violet;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Position</h1>
+    </header>
+
+    <nav>
+        <h1>Navbar</h1>
+    </nav>
+
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, earum repellat voluptatem vel sed
+            architecto dolorem. Voluptatum temporibus incidunt molestias esse soluta reprehenderit, dicta est nesciunt
+            odit quaerat quo vel.</p>
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, assumenda?
+        </div>
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, ipsa iste. Quod rerum, quis voluptatem dignissimos,
+    ea ab pariatur omnis unde distinctio itaque quo, voluptatum cupiditate laboriosam iure vero aliquid!
+
+</body>
+
+</html>
